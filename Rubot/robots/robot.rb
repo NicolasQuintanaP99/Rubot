@@ -44,19 +44,21 @@ class Robot
     puts "Numero de serie: #{@serial_number}"
     puts "Nombre: #{@name}"
     if @released
-      puts "Lanzado: Si"
+      if @buyed
+        puts "Estado: Comprador por #{@person.name}"
+      else
+        puts "Estado: Lanzado"
+      end
     else
-      puts "Lanzado: No"
+      puts "Estado: Construido"
     end
-    if @buyed
-      puts "Comprado por: #{@person.name}"
-    else
-      puts "Comprado por: Nadie"
-    end
-    if !@color.nil?
+    unless @color.nil?
       puts "Color: #{@color}"
+    else
+      puts "Color: No aplica"
     end
   end
+
 
 
 

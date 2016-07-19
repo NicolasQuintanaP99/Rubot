@@ -6,8 +6,4 @@ class Humanoid < Robot
     "Humanoide: Comportamiento de humano"
   end
 
-  def show_distance(value)
-    puts "Distancia que puedo recorrer: #{calculate_distance(value)}"
-  end
-
 end

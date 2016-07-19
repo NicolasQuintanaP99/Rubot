@@ -41,3 +41,12 @@ miner_robot_1.show_distance(100)
 
 puts "\n\nReporte:"
 Robot.show_report
+
+puts "\n\nInformacion del robot:"
+flyer_robot_1.show_info
+puts "\n\nInformacion del robot:"
+humanoid_robot_1.show_info
+puts "\n\nInformacion del robot:"
+miner_robot_1.show_info
+puts "\n\nInformacion del robot:"
+flyer_robot_2.show_info

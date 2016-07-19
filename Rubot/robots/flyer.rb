@@ -1,13 +1,17 @@
 require_relative 'robot'
 require_relative '../sources/battery'
+require_relative '../sources/painteable'
 class Flyer < Robot
   include Battery
+  include Painteable
 
+  def initialize(name)
+    super(name)
+    @color = paint
+  end
+  
   def self.ability
     "Volador: Volar"
   end
 
-  def show_distance(value)
-    puts "Distancia que puedo recorrer: #{calculate_distance(value)}"
-  end
 end

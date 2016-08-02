@@ -18,35 +18,20 @@ humanoid_robot_1.release!
 miner_robot_1.release!
 
 # People buy some of them
-person_1 = Person.new('John')
-person_2 = Person.new('Rachel')
-
-# Before buying them, people want to know the abilities of them
-puts 'Habilidades de los tipos de robots:'
-Flyer.show_abilities
-Humanoid.show_abilities
-Miner.show_abilities
+person_1 = Person.new('John', 'Doe')
+person_2 = Person.new('Rachel', 'Adams')
 
 puts "\n\nComprando robots..."
 flyer_robot_1.buy!(person_1)
 humanoid_robot_1.buy!(person_2)
-miner_robot_1.buy!(person_1)
 flyer_robot_2.buy!(person_1)
 
-# People test robots properties
-puts "\n\nPropiedades de los robots:"
-flyer_robot_1.show_distance(100)
-humanoid_robot_1.show_distance(100)
-miner_robot_1.show_distance(100)
-
-puts "\n\nReporte:"
-Robot.show_report
-
-puts "\n\nInformacion del robot:"
+puts "\n\nMostrando info de los robots..."
 flyer_robot_1.show_info
-puts "\n\nInformacion del robot:"
+puts '---'
 humanoid_robot_1.show_info
-puts "\n\nInformacion del robot:"
+puts '---'
 miner_robot_1.show_info
-puts "\n\nInformacion del robot:"
+puts '---'
 flyer_robot_2.show_info
+puts '---'

@@ -1,4 +1,5 @@
 require_relative 'robot'
+require_relative '../sources/battery'
 class Humanoid < Robot
   include Battery
 

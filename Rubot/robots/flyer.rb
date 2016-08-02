@@ -9,7 +9,7 @@ class Flyer < Robot
     super(name)
     @color = paint
   end
-  
+
   def self.ability
     "Volador: Volar"
   end
